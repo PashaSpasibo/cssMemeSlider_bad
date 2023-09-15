@@ -29,6 +29,9 @@ body{
 }
 .memes__container {
   height: 60vh;
+  width: 81vw;
+  background-color: #feddee;
+  border-radius: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,6 +42,8 @@ body{
   height: 0;
   width: 0;
   opacity: 0;
+  transition: all 1s ease-in-out;
+
 }
 
 .bottom__container {
@@ -51,6 +56,8 @@ body{
   opacity: 0;
   font-size: 0;
   color:deeppink;
+  transition: all 1s ease-in-out;
+
 }
 
 .buttons__container{
@@ -75,11 +82,9 @@ label{
 label:hover>.btn__content{
   border-color: deepskyblue;
 }
- input:checked ~ label>.btn__content{
-  background-color: deeppink;
-  border-color: deeppink;
+label:active>.btn__content{
+  background-color: rgba(255, 20, 145, 0.342);
 }
-
 /* перелистывание слайдов */
 
 .btn_1:checked ~ .memes__container>.meme__image_1, 
@@ -246,5 +251,8 @@ label:hover>.btn__content{
     align-items: center;
     justify-content: center;
     height: 5vh;
+  }
+  .description__container{
+    align-self: start;
   }
 }
