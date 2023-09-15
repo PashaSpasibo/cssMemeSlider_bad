@@ -1,0 +1,86 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-image: url(./assets/bg.webp);
+  background-repeat: repeat;
+  background-size: 8em;
+}
+.slider__container {
+  margin: auto;
+  width: 85%;
+  height: 70%;
+  background: rgb(5, 5, 40);
+  border-radius: 3%;
+  border: 1vw deeppink solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+.memes__container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meme__image {
+  display: none;
+  max-width: 70%;
+
+}
+.meme__image_1 {
+  display: block;
+}
+
+.bottom__container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.meme__description{
+  display: none;
+  font-size: 1.5em;
+  color:deeppink;
+}
+.meme__description_1 {
+  display: block;
+}
+.buttons__container{
+  display: flex;
+  align-items: center;
+}
+.buttons__btn{
+  width: 3vw;
+  height: 3vw;
+}
+.buttons__btn input{
+  display: none;
+}
+.buttons__btn label{
+  padding: .3em;
+  cursor: pointer;
+}
+.btn__content{
+  display: inline-block;
+  content: '';
+  width: .7em;
+  height: .7em;
+  border: .2em deeppink solid ;
+  border-radius: 50%;
+  transition: ease-in-out .4s all;
+}
+.buttons__btn label:hover>.btn__content{
+  border-color: deepskyblue;
+}
+.buttons__btn input:checked +label>.btn__content{
+  background-color: deeppink;
+  border-color: deeppink;
+}
