@@ -250,9 +250,15 @@ label:active>.btn__content{
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    height: 5vh;
+    height: 15vh;
   }
   .description__container{
     align-self: start;
+    height: 5vh;
+  }
+}
+@media (hover: none){
+  label:hover>.btn__content{
+    border-color: deeppink;
   }
 }
